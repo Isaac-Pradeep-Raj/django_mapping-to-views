@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cookie Created</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+            background-color: #CDF5FD;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            padding: 0;
+            color: #00A9FF;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2rem;
+            animation: slideIn 1s ease-out;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            animation: slideIn 1s ease-out 0.5s;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #0ba3f0;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .container {
+            background-color: #A0E9FF;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 90%;
+            max-width: 500px;
+            animation: zoomIn 1s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-30px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Kamaraj College of Engineering and Technology</p>
+        <p>Web Applications using Django Framework</p>
+        <p>Isaac Pradeep Raj KL Btech-IT</p>
+        <h1>Cookie Created Successfully for {{ username }}</h1>
+        <h2>Your mobile number: {{ mobile }}</h2>
+    </div>
+</body>
+</html>
